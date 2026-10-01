@@ -1,0 +1,24 @@
+{
+  "checked_local_date": "2026-09-30",
+  "docker_server": "29.8.1",
+  "image": "postgis/postgis:17-3.5",
+  "image_repo_digests": [
+    "postgis/postgis@sha256:01a6a70e41e6c4467c8f55f6063555ed72db2d6662cd0d571040d42eadaeb6f6"
+  ],
+  "postgresql": "17.5",
+  "postgis": "3.5.2",
+  "database": "urban_intelligence",
+  "user": "urban",
+  "host": "127.0.0.1",
+  "port": 5433,
+  "container_health": "healthy",
+  "schemas": [
+    "staging",
+    "dw",
+    "analytics"
+  ],
+  "spatial_contains_test": true,
+  "authenticated_tcp_inside_container": true,
+  "host_tcp_port_reachable": true,
+  "warehouse_loaded": false
+}

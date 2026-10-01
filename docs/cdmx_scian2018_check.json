@@ -1,0 +1,9 @@
+{
+  "catalog_sha256": "e7fce81120398a6c47709af6e1da268cd4cc5260f90a39cf197a683ff36022e6",
+  "catalog_extracted_classes": 1084,
+  "observed_distinct_classes": 937,
+  "unknown_classes": [],
+  "unknown_records": 0,
+  "scope": "Entire CDMX DENUE source",
+  "method": "Six digit codes at beginning of extracted lines; membership only, descriptions not compared"
+}

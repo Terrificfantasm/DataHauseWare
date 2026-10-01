@@ -1,0 +1,71 @@
+{
+  "source_hashes": {
+    "census": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a",
+    "boundaries": "685b912f5458138a70726cff41aff828473e14264c43289d3b21f86a9df00320",
+    "businesses": "64656b203239d136cbb57b012d7bf7929b2be2c2a59224a3fcc7629e15d9a3cf"
+  },
+  "crime_sha256": "f9c314c2943f7599db7281df4f2dbcc1a2db330d74d42da3d8142f2fe2c61d5b",
+  "missing_polygon_evidence": [
+    {
+      "census_key": "0901101101107",
+      "locality": [
+        {
+          "CVEGEO": "090110110",
+          "CVE_ENT": "09",
+          "CVE_MUN": "011",
+          "CVE_LOC": "0110",
+          "NOMGEO": "La Ciénega",
+          "AMBITO": "Rural"
+        }
+      ],
+      "rural_key_match": "090111107",
+      "interpretation": "Urban census vs rural cartographic classification; no geometric equivalence established"
+    },
+    {
+      "census_key": "0901201351227",
+      "locality": [
+        {
+          "CVEGEO": "090120135",
+          "CVE_ENT": "09",
+          "CVE_MUN": "012",
+          "CVE_LOC": "0135",
+          "NOMGEO": "Lomas de Tepemecatl",
+          "AMBITO": "Rural"
+        }
+      ],
+      "rural_key_match": "090121227",
+      "interpretation": "Urban census vs rural cartographic classification; no geometric equivalence established"
+    }
+  ],
+  "overlap_pairs_positive_area": 0,
+  "overlap_pairs_above_1m2": 0,
+  "business_outside": {
+    "rows": 1720,
+    "inside_entity": 1149,
+    "outside_entity": 571,
+    "within_100m_of_urban": 223,
+    "within_500m_of_urban": 677
+  },
+  "crime_outside": {
+    "rows": 654,
+    "inside_entity": 430,
+    "outside_entity": 224,
+    "within_100m_of_urban": 467,
+    "within_500m_of_urban": 576
+  },
+  "eligibility_rule_version": "candidate-v1",
+  "eligibility_counts": {
+    "candidate_unknown_competence": 129545,
+    "candidate_common_jurisdiction": 70105,
+    "excluded_noncriminal": 3810,
+    "excluded_incompetence": 661
+  },
+  "candidate_rows": 199650,
+  "spatial_candidate_rows": 191233,
+  "strict_common_jurisdiction_spatial_rows": 67527,
+  "limitations": [
+    "WGS84 assumed; accuracy unknown",
+    "Eligibility is a project candidate definition, not SESNSP harmonization",
+    "No snapping or rural substitution"
+  ]
+}

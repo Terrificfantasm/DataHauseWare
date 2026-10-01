@@ -1,0 +1,267 @@
+{
+  "generated_utc": "2026-10-01T03:50:38.730611+00:00",
+  "source_sha256": {
+    "census": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a",
+    "boundaries": "685b912f5458138a70726cff41aff828473e14264c43289d3b21f86a9df00320",
+    "businesses": "64656b203239d136cbb57b012d7bf7929b2be2c2a59224a3fcc7629e15d9a3cf"
+  },
+  "excluded_census_keys": [
+    "0901101101107",
+    "0901201351227"
+  ],
+  "config": {
+    "id": "cdmx",
+    "name": "AGEB urbanas de Ciudad de México",
+    "enabled": true,
+    "state": "09",
+    "municipalities": [],
+    "localities": [],
+    "census_year": 2020,
+    "boundary_year": 2020,
+    "business_release": "2020-11",
+    "sources": {
+      "census": "data/raw/cdmx/ageb_mza_urbana_09_cpv2020_csv.zip",
+      "boundaries": "data/raw/cdmx/09_ciudaddemexico.zip",
+      "boundary_member": "conjunto_de_datos/09a.shp",
+      "businesses": "data/raw/cdmx/denue_09_1120_csv.zip"
+    },
+    "crime": {
+      "status": "downloaded_pending_validation",
+      "path": "data/raw/cdmx/fgj_2020_datastore.csv",
+      "crs": "EPSG:4326",
+      "crs_basis": "Assumed from decimal longitude/latitude; authoritative datum and positional accuracy pending",
+      "cohort": "investigations initiated in 2020",
+      "resource_id": "30c87f13-82e8-4d01-b3f7-0e48aac6957d"
+    },
+    "business_encoding": "latin1",
+    "acknowledged_census_without_polygon": [
+      "0901101101107",
+      "0901201351227"
+    ]
+  },
+  "census_fields": {
+    "POBTOT": {
+      "rows": 2431,
+      "numeric": 2431,
+      "non_numeric_tokens": {},
+      "zero": 17,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_0A2": {
+      "rows": 2431,
+      "numeric": 2404,
+      "non_numeric_tokens": {
+        "*": 27
+      },
+      "zero": 33,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_3A5": {
+      "rows": 2431,
+      "numeric": 2411,
+      "non_numeric_tokens": {
+        "*": 20
+      },
+      "zero": 30,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_6A11": {
+      "rows": 2431,
+      "numeric": 2409,
+      "non_numeric_tokens": {
+        "*": 22
+      },
+      "zero": 26,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_12A14": {
+      "rows": 2431,
+      "numeric": 2408,
+      "non_numeric_tokens": {
+        "*": 23
+      },
+      "zero": 30,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_15A17": {
+      "rows": 2431,
+      "numeric": 2411,
+      "non_numeric_tokens": {
+        "*": 20
+      },
+      "zero": 32,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_18A24": {
+      "rows": 2431,
+      "numeric": 2417,
+      "non_numeric_tokens": {
+        "*": 14
+      },
+      "zero": 21,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_18YMAS": {
+      "rows": 2431,
+      "numeric": 2421,
+      "non_numeric_tokens": {
+        "*": 10
+      },
+      "zero": 17,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_60YMAS": {
+      "rows": 2431,
+      "numeric": 2414,
+      "non_numeric_tokens": {
+        "*": 17
+      },
+      "zero": 18,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "P_12YMAS": {
+      "rows": 2431,
+      "numeric": 2421,
+      "non_numeric_tokens": {
+        "*": 10
+      },
+      "zero": 17,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "PEA": {
+      "rows": 2431,
+      "numeric": 2421,
+      "non_numeric_tokens": {
+        "*": 10
+      },
+      "zero": 18,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "PE_INAC": {
+      "rows": 2431,
+      "numeric": 2419,
+      "non_numeric_tokens": {
+        "*": 12
+      },
+      "zero": 21,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "VIVTOT": {
+      "rows": 2431,
+      "numeric": 2431,
+      "non_numeric_tokens": {},
+      "zero": 18,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "TVIVHAB": {
+      "rows": 2431,
+      "numeric": 2431,
+      "non_numeric_tokens": {},
+      "zero": 18,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "VIVPAR_HAB": {
+      "rows": 2431,
+      "numeric": 2419,
+      "non_numeric_tokens": {
+        "*": 12
+      },
+      "zero": 20,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "VIVPARH_CV": {
+      "rows": 2431,
+      "numeric": 2418,
+      "non_numeric_tokens": {
+        "*": 13
+      },
+      "zero": 21,
+      "negative": 0,
+      "non_integer": 0
+    },
+    "VPH_INTER": {
+      "rows": 2431,
+      "numeric": 2416,
+      "non_numeric_tokens": {
+        "*": 15
+      },
+      "zero": 25,
+      "negative": 0,
+      "non_integer": 0
+    }
+  },
+  "consistency_checks": {
+    "pea_greater_than_population_12plus": 0,
+    "age_partition_not_evaluable": 44,
+    "age_partition_negative_residual": 0,
+    "age_partition_positive_residual": 454,
+    "age_partition_residual_total_known_rows": 9617.0,
+    "derived_25_59_missing": 20,
+    "derived_25_59_negative": 0,
+    "economic_condition_unknown_residual_rows": 2131,
+    "economic_condition_negative_residual_rows": 0,
+    "economic_condition_residual_total_known_rows": 16786.0
+  },
+  "denominators": {
+    "zero_population_ageb": 17,
+    "zero_population_12plus_ageb": 17,
+    "area_missing_or_nonpositive": 0,
+    "zero_assigned_business_ageb": 12
+  },
+  "business_inputs": {
+    "rows": 472608,
+    "invalid_six_digit_activity_code": 0,
+    "sector_counts": {
+      "11": 22,
+      "21": 58,
+      "22": 602,
+      "23": 2290,
+      "31-33": 33417,
+      "43": 16856,
+      "46": 202829,
+      "48-49": 3180,
+      "51": 1967,
+      "52": 11702,
+      "53": 5912,
+      "54": 14150,
+      "55": 237,
+      "56": 8630,
+      "61": 11901,
+      "62": 22853,
+      "71": 5254,
+      "72": 59517,
+      "81": 67465,
+      "93": 3766
+    },
+    "size_categories": {
+      "0 a 5 personas": 397023,
+      "6 a 10 personas": 33514,
+      "11 a 30 personas": 25010,
+      "31 a 50 personas": 6404,
+      "51 a 100 personas": 4760,
+      "101 a 250 personas": 3324,
+      "251 y más personas": 2573
+    },
+    "ageb_with_dominant_sector_ties": 77
+  },
+  "limitations": [
+    "Census symbols remain missing, never zero.",
+    "No final warehouse KPIs computed.",
+    "DENUE dictionary mentions SCIAN 2018; actual edition requires verification against release methodology."
+  ]
+}

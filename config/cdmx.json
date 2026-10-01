@@ -1,0 +1,30 @@
+{
+  "id": "cdmx",
+  "name": "AGEB urbanas de Ciudad de México",
+  "enabled": true,
+  "state": "09",
+  "municipalities": [],
+  "localities": [],
+  "census_year": 2020,
+  "boundary_year": 2020,
+  "business_release": "2020-11",
+  "sources": {
+    "census": "data/raw/cdmx/ageb_mza_urbana_09_cpv2020_csv.zip",
+    "boundaries": "data/raw/cdmx/09_ciudaddemexico.zip",
+    "boundary_member": "conjunto_de_datos/09a.shp",
+    "businesses": "data/raw/cdmx/denue_09_1120_csv.zip"
+  },
+  "crime": {
+    "status": "downloaded_pending_validation",
+    "path": "data/raw/cdmx/fgj_2020_datastore.csv",
+    "crs": "EPSG:4326",
+    "crs_basis": "Assumed from decimal longitude/latitude; authoritative datum and positional accuracy pending",
+    "cohort": "investigations initiated in 2020",
+    "resource_id": "30c87f13-82e8-4d01-b3f7-0e48aac6957d"
+  },
+  "business_encoding": "latin1",
+  "acknowledged_census_without_polygon": [
+    "0901101101107",
+    "0901201351227"
+  ]
+}

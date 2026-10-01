@@ -1,0 +1,79 @@
+{
+  "territory": {
+    "id": "cdmx",
+    "name": "AGEB urbanas de Ciudad de México",
+    "enabled": true,
+    "state": "09",
+    "municipalities": [],
+    "localities": [],
+    "census_year": 2020,
+    "boundary_year": 2020,
+    "business_release": "2020-11",
+    "sources": {
+      "census": "data/raw/cdmx/ageb_mza_urbana_09_cpv2020_csv.zip",
+      "boundaries": "data/raw/cdmx/09_ciudaddemexico.zip",
+      "boundary_member": "conjunto_de_datos/09a.shp",
+      "businesses": "data/raw/cdmx/denue_09_1120_csv.zip"
+    },
+    "crime": {
+      "status": "downloaded_pending_validation",
+      "path": "data/raw/cdmx/fgj_2020_datastore.csv",
+      "crs": "EPSG:4326",
+      "crs_basis": "Assumed from decimal longitude/latitude; authoritative datum and positional accuracy pending",
+      "cohort": "investigations initiated in 2020",
+      "resource_id": "30c87f13-82e8-4d01-b3f7-0e48aac6957d"
+    },
+    "business_encoding": "latin1",
+    "acknowledged_census_without_polygon": [
+      "0901101101107",
+      "0901201351227"
+    ]
+  },
+  "generated_utc": "2026-10-01T03:33:43.353461+00:00",
+  "phase1_complete": false,
+  "crime_status": "downloaded_pending_validation",
+  "sha256": {
+    "census": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a",
+    "boundaries": "685b912f5458138a70726cff41aff828473e14264c43289d3b21f86a9df00320",
+    "businesses": "64656b203239d136cbb57b012d7bf7929b2be2c2a59224a3fcc7629e15d9a3cf"
+  },
+  "warnings": [
+    "Census and business releases differ; no contemporary population estimate.",
+    "Crime integration pending. These outputs are Phase 1 diagnostics."
+  ],
+  "census": {
+    "ageb_rows": 2433,
+    "missing_population": 0,
+    "ageb_population_sum": 9145632,
+    "locality_population_sum": 9145632,
+    "population_without_polygon": 7108,
+    "mapped_population": 9138524
+  },
+  "geography": {
+    "polygons": 2431,
+    "crs": "PROJCS[\"MEXICO_ITRF_2008_LCC\",GEOGCS[\"ITRF2008\",DATUM[\"International_Terrestrial_Reference_Frame_2008\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"1061\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",12],PARAMETER[\"central_meridian\",-102],PARAMETER[\"standard_parallel_1\",17.5],PARAMETER[\"standard_parallel_2\",29.5],PARAMETER[\"false_easting\",2500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "invalid": 0,
+    "empty": 0,
+    "null": 0,
+    "duplicate_keys": 0,
+    "census_keys_without_polygon": [
+      "0901101101107",
+      "0901201351227"
+    ],
+    "polygon_keys_without_census": []
+  },
+  "businesses": {
+    "state_candidates": 474328,
+    "duplicate_id_rows": 0,
+    "declared_scope_rows": 474328,
+    "assignment_counts_state": {
+      "assigned": 472608,
+      "outside_selected_areas": 1720
+    },
+    "assignment_counts_declared_scope": {
+      "assigned": 472608,
+      "outside_selected_areas": 1720
+    },
+    "assigned_with_other_locality_codes": 0
+  }
+}

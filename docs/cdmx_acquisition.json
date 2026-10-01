@@ -1,0 +1,31 @@
+[
+  {
+    "path": "data\\raw\\cdmx\\ageb_mza_urbana_09_cpv2020_csv.zip",
+    "url": "https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/ageb_manzana/ageb_mza_urbana_09_cpv2020_csv.zip",
+    "bytes": 12990807,
+    "sha256": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a",
+    "verified_utc": "2026-10-01T03:28:56.144762+00:00"
+  },
+  {
+    "path": "data\\raw\\cdmx\\09_ciudaddemexico.zip",
+    "url": "https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/889463807469/09_ciudaddemexico.zip",
+    "bytes": 83207305,
+    "sha256": "685b912f5458138a70726cff41aff828473e14264c43289d3b21f86a9df00320",
+    "verified_utc": "2026-10-01T03:29:59.034077+00:00"
+  },
+  {
+    "path": "data\\raw\\cdmx\\denue_09_1120_csv.zip",
+    "url": "https://www.inegi.org.mx/contenidos/masiva/denue/2020_11/denue_09_1120_csv.zip",
+    "bytes": 38088299,
+    "sha256": "64656b203239d136cbb57b012d7bf7929b2be2c2a59224a3fcc7629e15d9a3cf",
+    "verified_utc": "2026-10-01T03:30:18.569752+00:00"
+  },
+  {
+    "path": "data/raw/cdmx/fgj_2020_datastore.csv",
+    "url": "https://datos.cdmx.gob.mx/datastore/dump/30c87f13-82e8-4d01-b3f7-0e48aac6957d?format=csv",
+    "bytes": 59988991,
+    "sha256": "f9c314c2943f7599db7281df4f2dbcc1a2db330d74d42da3d8142f2fe2c61d5b",
+    "verified_utc": "2026-10-01T03:31:12.493420+00:00",
+    "note": "Official CKAN export; direct archive URL TLS certificate expired. _id identifies datastore row, not a verified unique investigation."
+  }
+]

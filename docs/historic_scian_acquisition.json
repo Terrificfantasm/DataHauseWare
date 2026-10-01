@@ -1,0 +1,23 @@
+[
+  {
+    "path": "data/raw/inegi_scian2023/scian_2023_categorias_y_productos.xlsx",
+    "url": "https://www.inegi.org.mx/contenidos/app/scian/scian_2023_categorias_y_productos.xlsx?v=20230719",
+    "bytes": 5775982,
+    "sha256": "08ab321774db17c411ae499a78530a84acef05344765b81aa441f3da3e12511c",
+    "checked_utc": "2026-09-30T00:45:13.917031+00:00"
+  },
+  {
+    "path": "data/raw/inegi_denue_202004/denue_31_0420_csv.zip",
+    "url": "https://www.inegi.org.mx/contenidos/masiva/denue/2020_04/denue_31_0420_csv.zip",
+    "bytes": 7844736,
+    "sha256": "57bb2b7dc9117457747e6f657a29601122e1d819b8e323a9b3b54fc68065efd8",
+    "checked_utc": "2026-09-30T00:45:16.463004+00:00"
+  },
+  {
+    "path": "data/raw/inegi_denue_202011/denue_31_1120_csv.zip",
+    "url": "https://www.inegi.org.mx/contenidos/masiva/denue/2020_11/denue_31_1120_csv.zip",
+    "bytes": 7964435,
+    "sha256": "7d452f44e27a67cb471fde9c306c94836272ff33f9ee995f619fb4e855596eed",
+    "checked_utc": "2026-09-30T00:45:18.783521+00:00"
+  }
+]

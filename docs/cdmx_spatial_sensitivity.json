@@ -1,0 +1,53 @@
+{
+  "source_sha256": {
+    "census": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a",
+    "boundaries": "685b912f5458138a70726cff41aff828473e14264c43289d3b21f86a9df00320",
+    "businesses": "64656b203239d136cbb57b012d7bf7929b2be2c2a59224a3fcc7629e15d9a3cf"
+  },
+  "crime_sha256": "f9c314c2943f7599db7281df4f2dbcc1a2db330d74d42da3d8142f2fe2c61d5b",
+  "method": "Distance to boundary of assigned polygon in EPSG:32614; illustrative radii, not known errors; no relocation or reassignment",
+  "samples": {
+    "business": {
+      "rows": 472608,
+      "near_boundary": {
+        "10": {
+          "rows": 117463,
+          "percent": 24.85421321687318
+        },
+        "25": {
+          "rows": 200012,
+          "percent": 42.32090866003115
+        },
+        "50": {
+          "rows": 260997,
+          "percent": 55.224837497460896
+        },
+        "100": {
+          "rows": 358683,
+          "percent": 75.89439874060531
+        }
+      }
+    },
+    "crime": {
+      "rows": 191233,
+      "near_boundary": {
+        "10": {
+          "rows": 49705,
+          "percent": 25.991852870581962
+        },
+        "25": {
+          "rows": 77563,
+          "percent": 40.55942227544409
+        },
+        "50": {
+          "rows": 103471,
+          "percent": 54.107293197303804
+        },
+        "100": {
+          "rows": 145923,
+          "percent": 76.30639063341577
+        }
+      }
+    }
+  }
+}

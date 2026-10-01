@@ -1,0 +1,18 @@
+{
+  "id": "cdmx",
+  "name": "AGEB urbanas de Ciudad de México (alternativa sin activar)",
+  "enabled": false,
+  "state": "09",
+  "municipalities": [],
+  "localities": [],
+  "census_year": 2020,
+  "boundary_year": 2020,
+  "business_release": "PENDIENTE_VERIFICAR",
+  "sources": {
+    "census": "data/raw/cdmx/ageb_mza_urbana_09_cpv2020_csv.zip",
+    "boundaries": "data/raw/cdmx/09_ciudaddemexico.zip",
+    "boundary_member": "conjunto_de_datos/09a.shp",
+    "businesses": "data/raw/cdmx/denue_09_csv.zip"
+  },
+  "crime": {"status": "pending", "path": null, "crs": null}
+}

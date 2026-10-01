@@ -1,0 +1,18 @@
+{
+  "id": "merida",
+  "name": "Localidad urbana de Mérida",
+  "enabled": true,
+  "state": "31",
+  "municipalities": ["050"],
+  "localities": ["0001"],
+  "census_year": 2020,
+  "boundary_year": 2020,
+  "business_release": "2026-05",
+  "sources": {
+    "census": "data/raw/inegi_censo2020/ageb_mza_urbana_31_cpv2020_csv.zip",
+    "boundaries": "data/raw/inegi_marco2020/31_yucatan.zip",
+    "boundary_member": "conjunto_de_datos/31a.shp",
+    "businesses": "data/raw/inegi_denue/denue_31_csv.zip"
+  },
+  "crime": {"status": "pending", "path": null, "crs": null}
+}
