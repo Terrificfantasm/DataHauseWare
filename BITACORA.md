@@ -174,7 +174,7 @@ Al terminar: actualizar estado y siguiente acción; agregar una entrada fechada 
 - Consolidado docs/cierre_fase1.md, rector del alcance y criterios de calidad. La precisión desconocida y sensibilidad pasan como restricciones explícitas a la siguiente fase.
 - Adoptados 2,431 AGEB y candidate-v1 para la carga inicial; no se alteraron retrospectivamente diagnósticos ni originales.
 - Incorporadas copias de evidencia geográfica/seguridad y restaurador de fuentes con verificación SHA-256 para reproducir desde un clon.
-- Rama de publicación prevista: codex/fase-1-recoleccion-validacion-cdmx. Originales, salidas y credenciales excluidos; verificar resultado del push en Git.
+- Publicado commit de cierre 690e2e2 en origin/codex/fase-1-recoleccion-validacion-cdmx. Originales, salidas y credenciales excluidos. Primera publicación del repositorio; no había rama remota main ni se realizó merge.
 - Siguiente: migraciones del modelo dimensional y ETL. No hay datos cargados en el DW.
 
 ### Plantilla para futuras entradas
