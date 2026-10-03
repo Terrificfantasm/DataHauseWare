@@ -1,0 +1,8 @@
+{
+  "dataset_id": 2,
+  "checks": {
+    "business_assignments_equal": 474328,
+    "crime_assignments_equal": 204121,
+    "crime_eligibility_equal": 204121
+  }
+}

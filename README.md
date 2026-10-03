@@ -6,7 +6,13 @@ Proyecto académico de Data Warehouse geoespacial. Alcance activo desde 2026-09-
 
 ## Estado
 
-**Fase 1 cerrada para el alcance operativo documentado.** Ver [cierre y reproducción](docs/cierre_fase1.md): 2,431 AGEB, selección candidate-v1 y limitaciones que pasan a Fase 2. PostgreSQL/PostGIS operativo; modelo dimensional y carga pendientes.
+Fase 1 cerrada. **Fase 2 implementada y validada localmente**, pendiente revisión del PR: DW cargado, vistas de 14 indicadores y guía de continuación.
+
+- [Modelo y ETL de Fase 2](docs/fase2_modelo_etl.md)
+- [Instalación, consumo y continuación de Fase 3](HANDOFF_FASE3.md)
+- [Cierre de Fase 1](docs/cierre_fase1.md)
+
+Las instrucciones siguientes conservan la reproducción de los diagnósticos de Fase 1. Para cargar el DW no es necesario repetirlos: usar HANDOFF_FASE3.md.
 
 ## Ejecutar la comprobación geográfica
 
@@ -110,4 +116,4 @@ La [decisión de usar AGEB](docs/decision_geografica.md) compara alternativas, d
 
 ## Servicio local en ejecución
 
-PostgreSQL/PostGIS iniciado y verificado el 2026-09-30. [Conexión y operación](docs/docker_operacion.md). Puerto localhost:5433; esquemas creados, carga del DW pendiente.
+PostgreSQL/PostGIS iniciado y verificado el 2026-09-30. [Conexión y operación](docs/docker_operacion.md). Puerto localhost:5433; esquemas y carga del DW verificados; ver estado actualizado de Fase 2.

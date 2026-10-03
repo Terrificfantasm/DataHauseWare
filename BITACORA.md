@@ -1,6 +1,6 @@
 # Bitácora de DataHauseWare
 
-Última actualización: 2026-09-30 (America/Mexico_City).
+Última actualización: 2026-10-03 (America/Mexico_City).
 
 Este es el punto de entrada para retomar el proyecto entre sesiones. Mantener el estado actual arriba y agregar una entrada al historial al terminar cada sesión de trabajo. Registrar solo acciones realizadas y distinguirlas de propuestas. No guardar contraseñas ni datos personales.
 
@@ -8,14 +8,14 @@ Este es el punto de entrada para retomar el proyecto entre sesiones. Mantener el
 
 - **Carpeta:** `C:\Users\IGNITER\Downloads\DataHauseWare`.
 - **Territorio activo:** CDMX; el usuario activó Plan B porque el trámite de seguridad de Mérida rebasa el plazo. El profesor no es proveedor de datos.
-- **Fase:** 1 cerrada para alcance operativo CDMX; documento rector docs/cierre_fase1.md. Siguiente fase: modelo y ETL.
+- **Fase:** 1 cerrada; Fase 2 implementada y validada localmente, lista para revisión del PR. Modelo y guía en docs/fase2_modelo_etl.md y HANDOFF_FASE3.md.
 - **Configuración:** `config/cdmx.json`; usar siempre `--config config/cdmx.json` para el evaluador geográfico (su valor por defecto conserva Mérida).
 - **Resultados:** 2,431 polígonos válidos; 472,608 registros DENUE y 194,356 registros FGJ asignados. Seguridad: 9,111 coordenadas inválidas/ausentes y 654 filas fuera.
 - **Límites:** dos AGEB censales sin polígono (7,108 habitantes); FGJ es cohorte de inicio 2020, no todos los hechos de 2020. Precisión, elegibilidad y cobertura pendientes. No interpretar todos los registros como delitos.
-- **Siguiente acción:** cerrar modelo dimensional y preparar carga PostGIS/ETL. Las 80 simulaciones ya terminaron: docs/simulaciones_cdmx.md. Repetir sensibilidad sobre KPIs finales antes de interpretar focos locales.
+- **Siguiente acción:** usuario crea PR de codex/fase-2-modelo-etl-postgis hacia main, revisar CI y reproducir la guía en otro equipo; después análisis de Fase 3. PR aún no creado automáticamente por preferencia del usuario.
 - **Guía vigente y contrato:** [Plan B](docs/plan_b_cdmx.md). [Manifiesto](docs/cdmx_acquisition.json).
-- **Validación:** 14 pruebas aprobadas; cero superposiciones de AGEB. Selección operativa candidate-v1: 199,650 candidatos FGJ, 191,233 asignados; competencia desconocida conservada y marcada.
-- **PostGIS:** contenedor activo y healthy; PostgreSQL 17.5 / PostGIS 3.5.2, localhost:5433. Esquemas staging/dw/analytics creados; DW todavía sin tablas de hechos ni carga. Publicación de Fase 1 en rama codex/fase-1-recoleccion-validacion-cdmx; mantener contribuciones reales, sin atribuciones ficticias.
+- **Validación:** 23 pruebas aprobadas (9 integración), 18 controles DW y 11 analíticos; cero superposiciones de AGEB. Selección operativa candidate-v1: 199,650 candidatos FGJ, 191,233 asignados; competencia desconocida conservada y marcada.
+- **PostGIS:** activo; DW cargado (dataset local 2), vistas publicadas, repetición sin duplicados y paridad fila a fila comprobada. Consultar list_datasets.py; no asumir ID 2 en otro equipo.
 - **No rehacer:** originales y resultados de Mérida se conservan; originales CDMX ya descargados. No mezclar territorios ni inventar coordenadas. Los documentos de Mérida son antecedentes, no evidencia activa de CDMX.
 
 ## Decisiones vigentes
@@ -176,6 +176,16 @@ Al terminar: actualizar estado y siguiente acción; agregar una entrada fechada 
 - Incorporadas copias de evidencia geográfica/seguridad y restaurador de fuentes con verificación SHA-256 para reproducir desde un clon.
 - Publicado commit de cierre 690e2e2 en origin/codex/fase-1-recoleccion-validacion-cdmx. Originales, salidas y credenciales excluidos. Primera publicación del repositorio; no había rama remota main ni se realizó merge.
 - Siguiente: migraciones del modelo dimensional y ETL. No hay datos cargados en el DW.
+
+### 2026-10-03 — Fase 2: modelo, carga, validación y consumo
+
+- main creada exactamente desde 9f89a61 (cierre Fase 1) con autorización expresa. Cambios nuevos en codex/fase-2-modelo-etl-postgis, sin merge.
+- Implementadas migraciones, dimensiones, hechos, staging JSONB y calidad; carga original transaccional con COPY y asignación PostGIS. Primer intento falló por ejecución de múltiples sentencias y se revirtió por completo; corrección confirmada.
+- Dataset local 2: 2,431 AGEB, 474,328 negocios y 204,121 FGJ. 18 controles conciliados; selección espacial candidate-v1: 191,233. Paridad exacta de asignaciones/elegibilidad con Fase 1.
+- Repetición idempotente probada. Vistas de 14 KPIs publicadas con 11 controles y exportador de sólo lectura ejecutado.
+- 23 pruebas aprobadas (9 integración), base de pruebas urban_intelligence_test separada. Workflow CI preparado, resultado remoto pendiente.
+- Evidencia en docs/fase2_*.json, modelo en docs/fase2_modelo_etl.md; continuación autónoma en HANDOFF_FASE3.md. Texto listo para PR en docs/PR_FASE2.md.
+- Usuario prefiere crear el PR manualmente. Rama publicada: codex/fase-2-modelo-etl-postgis, commit de implementación 0b80ce3. main permanece en 9f89a61. PR aún no abierto. Pendiente revisión/merge, comprobar CI y reproducción en otro equipo, luego análisis final.
 
 ### Plantilla para futuras entradas
 
