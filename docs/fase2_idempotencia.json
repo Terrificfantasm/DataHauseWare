@@ -1,0 +1,43 @@
+{
+  "dataset_id": 2,
+  "checks_passed": 18,
+  "counts": {
+    "areas": 2431,
+    "population_rows": 2431,
+    "population": 9138524,
+    "business_rows": 474328,
+    "business_assigned": 472608,
+    "crime_rows": 204121,
+    "crime_assigned": 194356,
+    "crime_candidates": 199650,
+    "crime_candidates_assigned": 191233,
+    "census_without_polygon": 2,
+    "population_zero": 17,
+    "invalid_occurred_dates": 43,
+    "occurred_after_start": 1,
+    "noncriminal": 3810,
+    "incompetence": 661,
+    "repeated_public_rows": 679
+  },
+  "staging": {
+    "boundaries": 2431,
+    "businesses": 474328,
+    "census": 2433,
+    "crime": 204121
+  },
+  "spatial_statuses": {
+    "fact_business_snapshot": {
+      "assigned": 472608,
+      "outside_selected_areas": 1720
+    },
+    "fact_crime_record": {
+      "assigned": 194356,
+      "invalid_coordinates": 9111,
+      "outside_selected_areas": 654
+    }
+  },
+  "idempotent_skip": true,
+  "run_id": 4,
+  "fingerprint": "cf1717a7ad473908601293c7f72ac73de3d2e854f384c4e7e2e434fe8620cd4c",
+  "elapsed_seconds": 0.31
+}

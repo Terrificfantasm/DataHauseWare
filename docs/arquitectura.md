@@ -1,3 +1,5 @@
+> Implementación vigente: [modelo y ETL de Fase 2](fase2_modelo_etl.md). Este archivo conserva la propuesta previa.
+
 > Estado vigente: [cierre de Fase 1 y alcance operativo](cierre_fase1.md). Este documento conserva antecedentes; el DW sigue pendiente.
 
 # Arquitectura adaptable (propuesta, no DW terminado)

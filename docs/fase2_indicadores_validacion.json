@@ -1,0 +1,17 @@
+{
+  "dataset_id": 2,
+  "checks_passed": 11,
+  "counts": {
+    "ageb_rows": 2431,
+    "population_sum": 9138524,
+    "business_sum": 472608,
+    "crime_sum": 191233,
+    "population_null_ratios": 17,
+    "business_null_ratios": 12,
+    "dominant_ties": 77,
+    "age_groups": 19448,
+    "derived_age_missing": 20,
+    "monthly_type_sum": 191233,
+    "retail_sum": 202829
+  }
+}

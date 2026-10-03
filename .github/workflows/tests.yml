@@ -1,0 +1,39 @@
+name: Validate warehouse code
+on:
+  pull_request:
+  push:
+    branches: [main, 'codex/fase-2-modelo-etl-postgis']
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:17-3.5
+        env:
+          POSTGRES_DB: urban_intelligence_test
+          POSTGRES_USER: urban
+          POSTGRES_PASSWORD: ci_test_only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U urban -d urban_intelligence_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      POSTGRES_HOST: 127.0.0.1
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: urban_intelligence_test
+      POSTGRES_USER: urban
+      POSTGRES_PASSWORD: ci_test_only
+      DW_TEST_DATABASE: urban_intelligence_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest tests -q
