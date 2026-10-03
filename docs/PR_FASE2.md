@@ -26,3 +26,5 @@ La Fase 1 dejó fuentes y diagnósticos, pero aún no había datos en el DW. Est
 El cargador está limitado a la descarga CDMX 2020 cerrada en Fase 1. Conserva las restricciones de cobertura, cohorte de inicio y precisión geográfica desconocida. Simulaciones y diagnósticos no validan por sí solos las conclusiones inferenciales.
 
 Revisar ejecución de GitHub Actions y reproducir en otro equipo; esos resultados no se afirman como comprobados. No incluye análisis finales, Moran/LISA ni reporte final. No se fusiona automáticamente con main.
+
+[Crear PR con base main](https://github.com/Terrificfantasm/DataHauseWare/compare/main...codex/fase-2-modelo-etl-postgis?expand=1). La creación queda a cargo del usuario; esta documentación no indica un PR ya abierto.

@@ -185,7 +185,7 @@ Al terminar: actualizar estado y siguiente acción; agregar una entrada fechada 
 - Repetición idempotente probada. Vistas de 14 KPIs publicadas con 11 controles y exportador de sólo lectura ejecutado.
 - 23 pruebas aprobadas (9 integración), base de pruebas urban_intelligence_test separada. Workflow CI preparado, resultado remoto pendiente.
 - Evidencia en docs/fase2_*.json, modelo en docs/fase2_modelo_etl.md; continuación autónoma en HANDOFF_FASE3.md. Texto listo para PR en docs/PR_FASE2.md.
-- Usuario prefiere crear el PR manualmente. Publicar rama y entregar enlace de comparación hacia main; no afirmar PR abierto. Pendiente revisión/merge y reproducción en otro equipo, luego análisis final.
+- Usuario prefiere crear el PR manualmente. Rama publicada: codex/fase-2-modelo-etl-postgis, commit de implementación 0b80ce3. main permanece en 9f89a61. PR aún no abierto. Pendiente revisión/merge, comprobar CI y reproducción en otro equipo, luego análisis final.
 
 ### Plantilla para futuras entradas
 
