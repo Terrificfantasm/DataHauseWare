@@ -1,4 +1,4 @@
-# Urban Intelligence / DataHauseWare
+# Urban Intelligence / DataHauseWare 
 
 **Para retomar el proyecto:** leer la [bitácora de trabajo](BITACORA.md), con estado actual, decisiones, pendientes e historial por sesión.
 
