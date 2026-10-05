@@ -1,4 +1,4 @@
-"""Shared utilities for Phase 3 spatial analytics.
+"""Shared utilities for Phase 3 spatial analytics. 
 
 All final Phase 3 analyses consume exports generated from PostgreSQL/PostGIS.
 Raw source files are not read here. Missing values are never imputed as zero.
