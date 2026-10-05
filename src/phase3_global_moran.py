@@ -1,5 +1,5 @@
 """Global Moran's I for selected AGEB KPIs.
-
+ 
 The implementation uses row-standardized Queen contiguity and a reproducible
 permutation test, avoiding hidden changes to missing data or spatial topology.
 """
