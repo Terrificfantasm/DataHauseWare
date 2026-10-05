@@ -1,5 +1,5 @@
 import geopandas as gpd
-import numpy as np
+import numpy as np 
 from shapely.geometry import box
 
 from phase3_global_moran import analyze_variable, moran_i, permutation_test
