@@ -1,0 +1,347 @@
+{
+  "dataset_id": 2,
+  "geographic_distribution": {
+    "dataset_id": 2,
+    "unit": "AGEB urbana, CDMX",
+    "variables": [
+      {
+        "variable": "population_density",
+        "minimum": 0.0,
+        "q1": 9253.143650382855,
+        "median": 15836.862684237212,
+        "q3": 22632.72847838189,
+        "maximum": 121969.61459316804,
+        "data_audit": {
+          "requested_columns": [
+            "population_density"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2431,
+          "excluded_rows": 0
+        },
+        "figure": "phase3/geographic_distribution/map_population_density.png"
+      },
+      {
+        "variable": "business_density",
+        "minimum": 0.0,
+        "q1": 301.3686548460467,
+        "median": 607.2123516006712,
+        "q3": 985.0711010070038,
+        "maximum": 24146.24391597664,
+        "data_audit": {
+          "requested_columns": [
+            "business_density"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2431,
+          "excluded_rows": 0
+        },
+        "figure": "phase3/geographic_distribution/map_business_density.png"
+      },
+      {
+        "variable": "crime_records_per_1000",
+        "minimum": 0.0,
+        "q1": 11.377871628514303,
+        "median": 17.1054397066945,
+        "q3": 26.59713046876454,
+        "maximum": 26500.0,
+        "data_audit": {
+          "requested_columns": [
+            "crime_records_per_1000"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2414,
+          "excluded_rows": 17
+        },
+        "figure": "phase3/geographic_distribution/map_crime_records_per_1000.png"
+      }
+    ],
+    "caution": "These maps are descriptive. Visible geographic patterns do not by themselves establish spatial autocorrelation or causation."
+  },
+  "correlations": {
+    "dataset_id": 2,
+    "unit": "AGEB urbana, CDMX",
+    "relationships": [
+      {
+        "x": "population_density",
+        "y": "business_density",
+        "method": "spearman",
+        "coefficient": 0.4011633194595941,
+        "p_value": 1.1391404615014482e-94,
+        "significant_at_0_05": true,
+        "n": 2431,
+        "diagnostics": {
+          "x_skew": 1.09570606353903,
+          "y_skew": 9.433151695213228,
+          "x_outlier_share": 0.01563142739613328,
+          "y_outlier_share": 0.04401480872069107,
+          "selection_rule": "Spearman if |skew| > 1 or IQR-outlier share > 5% in either variable; otherwise Pearson."
+        },
+        "data_audit": {
+          "requested_columns": [
+            "population_density",
+            "business_density"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2431,
+          "excluded_rows": 0
+        },
+        "figure": "phase3/correlations/correlation_population_density__business_density.png",
+        "caution": "Correlation does not imply causation."
+      },
+      {
+        "x": "population_density",
+        "y": "crime_records_per_1000",
+        "method": "spearman",
+        "coefficient": -0.3662762794229968,
+        "p_value": 1.5724075762315986e-77,
+        "significant_at_0_05": true,
+        "n": 2414,
+        "diagnostics": {
+          "x_skew": 1.1202552388744942,
+          "y_skew": 22.22188350424696,
+          "x_outlier_share": 0.015741507870753936,
+          "y_outlier_share": 0.0936205468102734,
+          "selection_rule": "Spearman if |skew| > 1 or IQR-outlier share > 5% in either variable; otherwise Pearson."
+        },
+        "data_audit": {
+          "requested_columns": [
+            "population_density",
+            "crime_records_per_1000"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2414,
+          "excluded_rows": 17
+        },
+        "figure": "phase3/correlations/correlation_population_density__crime_records_per_1000.png",
+        "caution": "Correlation does not imply causation."
+      },
+      {
+        "x": "business_density",
+        "y": "crime_records_per_1000",
+        "method": "spearman",
+        "coefficient": 0.300693151935165,
+        "p_value": 1.2445407604917452e-51,
+        "significant_at_0_05": true,
+        "n": 2414,
+        "diagnostics": {
+          "x_skew": 9.512627237200393,
+          "y_skew": 22.22188350424696,
+          "x_outlier_share": 0.043496271748135876,
+          "y_outlier_share": 0.0936205468102734,
+          "selection_rule": "Spearman if |skew| > 1 or IQR-outlier share > 5% in either variable; otherwise Pearson."
+        },
+        "data_audit": {
+          "requested_columns": [
+            "business_density",
+            "crime_records_per_1000"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2414,
+          "excluded_rows": 17
+        },
+        "figure": "phase3/correlations/correlation_business_density__crime_records_per_1000.png",
+        "caution": "Correlation does not imply causation."
+      }
+    ]
+  },
+  "global_moran": {
+    "dataset_id": 2,
+    "unit": "AGEB urbana, CDMX",
+    "neighborhood_rule": "Queen contiguity",
+    "variables": [
+      {
+        "variable": "crime_records_per_1000",
+        "moran_i": 0.025032834946459994,
+        "expected_i": -0.0004144218814753419,
+        "p_sim": 0.022,
+        "z_sim": 2.401468328805479,
+        "sim_mean": -0.0007416600929606688,
+        "sim_std": 0.010732806562658783,
+        "permutations": 999,
+        "seed": 42,
+        "significant_at_0_05": true,
+        "data_audit": {
+          "requested_columns": [
+            "crime_records_per_1000"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2414,
+          "excluded_rows": 17
+        },
+        "weights_audit": {
+          "rule": "Queen contiguity (shared edge or vertex)",
+          "implementation": "GeoPandas spatial index with polygon intersects predicate",
+          "n": 2414,
+          "islands": [
+            "4081"
+          ],
+          "island_count": 1,
+          "components": 6,
+          "min_neighbors": 0,
+          "max_neighbors": 21,
+          "mean_neighbors": 5.871582435791218
+        },
+        "figure": "phase3/global_moran/moran_scatter_crime_records_per_1000.png",
+        "caution": "Spatial association does not imply causation. Results depend on the Queen-neighborhood rule, missing-value exclusions, and the operational definition of the underlying indicators."
+      },
+      {
+        "variable": "business_density",
+        "moran_i": 0.4397721715235542,
+        "expected_i": -0.00041152263374485596,
+        "p_sim": 0.001,
+        "z_sim": 35.44216139929751,
+        "sim_mean": -0.00037902333346077536,
+        "sim_std": 0.012418858711752809,
+        "permutations": 999,
+        "seed": 42,
+        "significant_at_0_05": true,
+        "data_audit": {
+          "requested_columns": [
+            "business_density"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2431,
+          "excluded_rows": 0
+        },
+        "weights_audit": {
+          "rule": "Queen contiguity (shared edge or vertex)",
+          "implementation": "GeoPandas spatial index with polygon intersects predicate",
+          "n": 2431,
+          "islands": [
+            "4081"
+          ],
+          "island_count": 1,
+          "components": 6,
+          "min_neighbors": 0,
+          "max_neighbors": 26,
+          "mean_neighbors": 5.933360756890169
+        },
+        "figure": "phase3/global_moran/moran_scatter_business_density.png",
+        "caution": "Spatial association does not imply causation. Results depend on the Queen-neighborhood rule, missing-value exclusions, and the operational definition of the underlying indicators."
+      }
+    ]
+  },
+  "lisa": {
+    "dataset_id": 2,
+    "unit": "AGEB urbana, CDMX",
+    "neighborhood_rule": "Queen contiguity",
+    "variables": [
+      {
+        "variable": "crime_records_per_1000",
+        "alpha": 0.05,
+        "permutations": 999,
+        "seed": 42,
+        "cluster_counts": {
+          "Not significant": 2272,
+          "Low-High": 110,
+          "High-High": 20,
+          "Low-Low": 11,
+          "Island": 1
+        },
+        "significant_count": 141,
+        "data_audit": {
+          "requested_columns": [
+            "crime_records_per_1000"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2414,
+          "excluded_rows": 17
+        },
+        "weights_audit": {
+          "rule": "Queen contiguity (shared edge or vertex)",
+          "implementation": "GeoPandas spatial index with polygon intersects predicate",
+          "n": 2414,
+          "islands": [
+            "4081"
+          ],
+          "island_count": 1,
+          "components": 6,
+          "min_neighbors": 0,
+          "max_neighbors": 21,
+          "mean_neighbors": 5.871582435791218
+        },
+        "table": "phase3/lisa/lisa_clusters_crime_records_per_1000.csv",
+        "figure": "phase3/lisa/lisa_map_crime_records_per_1000.png",
+        "caution": "LISA identifies local spatial association/outliers; it does not establish causation."
+      },
+      {
+        "variable": "business_density",
+        "alpha": 0.05,
+        "permutations": 999,
+        "seed": 42,
+        "cluster_counts": {
+          "Not significant": 2260,
+          "High-High": 121,
+          "Low-Low": 25,
+          "Low-High": 23,
+          "High-Low": 1,
+          "Island": 1
+        },
+        "significant_count": 170,
+        "data_audit": {
+          "requested_columns": [
+            "business_density"
+          ],
+          "input_rows": 2431,
+          "included_rows": 2431,
+          "excluded_rows": 0
+        },
+        "weights_audit": {
+          "rule": "Queen contiguity (shared edge or vertex)",
+          "implementation": "GeoPandas spatial index with polygon intersects predicate",
+          "n": 2431,
+          "islands": [
+            "4081"
+          ],
+          "island_count": 1,
+          "components": 6,
+          "min_neighbors": 0,
+          "max_neighbors": 26,
+          "mean_neighbors": 5.933360756890169
+        },
+        "table": "phase3/lisa/lisa_clusters_business_density.csv",
+        "figure": "phase3/lisa/lisa_map_business_density.png",
+        "caution": "LISA identifies local spatial association/outliers; it does not establish causation."
+      }
+    ]
+  },
+  "bivariate_moran": {
+    "dataset_id": 2,
+    "unit": "AGEB urbana, CDMX",
+    "x_local": "business_density",
+    "y_spatial_lag": "crime_records_per_1000",
+    "moran_bv_i": 0.026104519446770523,
+    "p_sim": 0.047,
+    "z_sim": 1.9252241126198324,
+    "sim_mean": -0.0002588593582660469,
+    "sim_std": 0.013693667470828346,
+    "significant_at_0_05": true,
+    "permutations": 999,
+    "seed": 42,
+    "data_audit": {
+      "requested_columns": [
+        "business_density",
+        "crime_records_per_1000"
+      ],
+      "input_rows": 2431,
+      "included_rows": 2414,
+      "excluded_rows": 17
+    },
+    "weights_audit": {
+      "rule": "Queen contiguity (shared edge or vertex)",
+      "implementation": "GeoPandas spatial index with polygon intersects predicate",
+      "n": 2414,
+      "islands": [
+        "4081"
+      ],
+      "island_count": 1,
+      "components": 6,
+      "min_neighbors": 0,
+      "max_neighbors": 21,
+      "mean_neighbors": 5.871582435791218
+    },
+    "figure": "phase3/bivariate_moran/bivariate_moran_business_density__crime_records_per_1000.png",
+    "caution": "This is spatial association between different variables and does not establish causation."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "dataset_id": 2,
+  "unit": "AGEB urbana, CDMX",
+  "variables": [
+    {
+      "variable": "population_density",
+      "minimum": 0.0,
+      "q1": 9253.143650382855,
+      "median": 15836.862684237212,
+      "q3": 22632.72847838189,
+      "maximum": 121969.61459316804,
+      "data_audit": {
+        "requested_columns": [
+          "population_density"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2431,
+        "excluded_rows": 0
+      },
+      "figure": "phase3/geographic_distribution/map_population_density.png"
+    },
+    {
+      "variable": "business_density",
+      "minimum": 0.0,
+      "q1": 301.3686548460467,
+      "median": 607.2123516006712,
+      "q3": 985.0711010070038,
+      "maximum": 24146.24391597664,
+      "data_audit": {
+        "requested_columns": [
+          "business_density"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2431,
+        "excluded_rows": 0
+      },
+      "figure": "phase3/geographic_distribution/map_business_density.png"
+    },
+    {
+      "variable": "crime_records_per_1000",
+      "minimum": 0.0,
+      "q1": 11.377871628514303,
+      "median": 17.1054397066945,
+      "q3": 26.59713046876454,
+      "maximum": 26500.0,
+      "data_audit": {
+        "requested_columns": [
+          "crime_records_per_1000"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2414,
+        "excluded_rows": 17
+      },
+      "figure": "phase3/geographic_distribution/map_crime_records_per_1000.png"
+    }
+  ],
+  "caution": "These maps are descriptive. Visible geographic patterns do not by themselves establish spatial autocorrelation or causation."
+}

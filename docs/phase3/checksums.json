@@ -1,0 +1,23 @@
+{
+  "README.md": "7ba24bb253b580e266591f33e01bf43cb58846c7084dd667bc9398fdee225a06",
+  "figures/bivariate_moran_business_density__crime_records_per_1000.png": "8c7a4d76f6adf8820e3fa3a48abc727edb280cac1cdca433b7e85e005b87ef1a",
+  "figures/correlation_business_density__crime_records_per_1000.png": "8b3c63ea0fe03fc7114a18d0ec748147b6d99d44155c9cd1cf4bcecf8485891b",
+  "figures/correlation_population_density__business_density.png": "c337a28bde9d71c891f98ce244df59bbe3c95d8c217d152b753907677b53e5a7",
+  "figures/correlation_population_density__crime_records_per_1000.png": "a2b2db5a7dd91a07c1100da2a22b093c3e10b0f583d1dc09a41aa5485f12f22a",
+  "figures/lisa_map_business_density.png": "30f4e4ccff51d1cc3954da4fb0aa8b333fec6f2a9c2599c16dfdf4b04430c170",
+  "figures/lisa_map_crime_records_per_1000.png": "f93acd588205311a04d93f8cbad090391417261ec731038ff7c2934fa36ee71a",
+  "figures/map_business_density.png": "0c453a7b1c5e47f6a72bf7ac8c0daf3fe13a5d5b6cf3835b249bc7135cd51d71",
+  "figures/map_crime_records_per_1000.png": "ed6df701687772a23356290c75b32f922eb0bcec680d3f7e720755ea68878484",
+  "figures/map_population_density.png": "76095792b36e52aeecec64caebba230777253f28a4a8555d8bc2de1cccbb47e0",
+  "figures/moran_scatter_business_density.png": "fa4e038da2e59842f2527cba586f635ef4504617ab7966c450e8ebeb80f003e4",
+  "figures/moran_scatter_crime_records_per_1000.png": "9a6e8caa21601945c9ffbc0d1d4bcb3408664f66e02e5eb7c3ec1d2e2cb3f379",
+  "input_manifest.json": "f248aa6f7189d4f2213978296ab14d8d04c955aac8eb43ada4768c359fa0881b",
+  "summaries/bivariate_moran_summary.json": "d6b230c0a4cdc75b33fbe4253ee908080d53e0f6c86aa6ebc755d7c9b8707bd8",
+  "summaries/correlations_summary.json": "16910e9cc9f20c86efdd1ddb4e7ce446a4cafc1da444af3ac128a8f61e3e627e",
+  "summaries/geographic_distribution_summary.json": "2b7bac77af320826f173cb11712d104e33f106102896cebe78468f1ee3727328",
+  "summaries/global_moran_summary.json": "8b381d2771fc126c37820fd4846d927de75ce9a9e3e9caa597def2a872d2f463",
+  "summaries/lisa_summary.json": "86a00a668eaf62c28401e843ff91bf07e3e737ea5b76a164727c8c683cfca2c4",
+  "summaries/phase3_summary.json": "9ba7234bf50c98dc260bafb969fdf6ef989774cc55e7c50a964b439dc1c5b952",
+  "tables/lisa_clusters_business_density.csv": "1169780512e7057cb63fc0c66c047ef2437aeaaecc0271d2723081905b1b6f07",
+  "tables/lisa_clusters_crime_records_per_1000.csv": "d773aad46821b88125dc1eaa91b0d92130ac305229cc506df370ad7ac15d7e4a"
+}

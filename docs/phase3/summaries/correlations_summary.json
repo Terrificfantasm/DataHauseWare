@@ -1,0 +1,87 @@
+{
+  "dataset_id": 2,
+  "unit": "AGEB urbana, CDMX",
+  "relationships": [
+    {
+      "x": "population_density",
+      "y": "business_density",
+      "method": "spearman",
+      "coefficient": 0.4011633194595941,
+      "p_value": 1.1391404615014482e-94,
+      "significant_at_0_05": true,
+      "n": 2431,
+      "diagnostics": {
+        "x_skew": 1.09570606353903,
+        "y_skew": 9.433151695213228,
+        "x_outlier_share": 0.01563142739613328,
+        "y_outlier_share": 0.04401480872069107,
+        "selection_rule": "Spearman if |skew| > 1 or IQR-outlier share > 5% in either variable; otherwise Pearson."
+      },
+      "data_audit": {
+        "requested_columns": [
+          "population_density",
+          "business_density"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2431,
+        "excluded_rows": 0
+      },
+      "figure": "phase3/correlations/correlation_population_density__business_density.png",
+      "caution": "Correlation does not imply causation."
+    },
+    {
+      "x": "population_density",
+      "y": "crime_records_per_1000",
+      "method": "spearman",
+      "coefficient": -0.3662762794229968,
+      "p_value": 1.5724075762315986e-77,
+      "significant_at_0_05": true,
+      "n": 2414,
+      "diagnostics": {
+        "x_skew": 1.1202552388744942,
+        "y_skew": 22.22188350424696,
+        "x_outlier_share": 0.015741507870753936,
+        "y_outlier_share": 0.0936205468102734,
+        "selection_rule": "Spearman if |skew| > 1 or IQR-outlier share > 5% in either variable; otherwise Pearson."
+      },
+      "data_audit": {
+        "requested_columns": [
+          "population_density",
+          "crime_records_per_1000"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2414,
+        "excluded_rows": 17
+      },
+      "figure": "phase3/correlations/correlation_population_density__crime_records_per_1000.png",
+      "caution": "Correlation does not imply causation."
+    },
+    {
+      "x": "business_density",
+      "y": "crime_records_per_1000",
+      "method": "spearman",
+      "coefficient": 0.300693151935165,
+      "p_value": 1.2445407604917452e-51,
+      "significant_at_0_05": true,
+      "n": 2414,
+      "diagnostics": {
+        "x_skew": 9.512627237200393,
+        "y_skew": 22.22188350424696,
+        "x_outlier_share": 0.043496271748135876,
+        "y_outlier_share": 0.0936205468102734,
+        "selection_rule": "Spearman if |skew| > 1 or IQR-outlier share > 5% in either variable; otherwise Pearson."
+      },
+      "data_audit": {
+        "requested_columns": [
+          "business_density",
+          "crime_records_per_1000"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2414,
+        "excluded_rows": 17
+      },
+      "figure": "phase3/correlations/correlation_business_density__crime_records_per_1000.png",
+      "caution": "Correlation does not imply causation."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "dataset_id": 2,
+  "unit": "AGEB urbana, CDMX",
+  "x_local": "business_density",
+  "y_spatial_lag": "crime_records_per_1000",
+  "moran_bv_i": 0.026104519446770523,
+  "p_sim": 0.047,
+  "z_sim": 1.9252241126198324,
+  "sim_mean": -0.0002588593582660469,
+  "sim_std": 0.013693667470828346,
+  "significant_at_0_05": true,
+  "permutations": 999,
+  "seed": 42,
+  "data_audit": {
+    "requested_columns": [
+      "business_density",
+      "crime_records_per_1000"
+    ],
+    "input_rows": 2431,
+    "included_rows": 2414,
+    "excluded_rows": 17
+  },
+  "weights_audit": {
+    "rule": "Queen contiguity (shared edge or vertex)",
+    "implementation": "GeoPandas spatial index with polygon intersects predicate",
+    "n": 2414,
+    "islands": [
+      "4081"
+    ],
+    "island_count": 1,
+    "components": 6,
+    "min_neighbors": 0,
+    "max_neighbors": 21,
+    "mean_neighbors": 5.871582435791218
+  },
+  "figure": "phase3/bivariate_moran/bivariate_moran_business_density__crime_records_per_1000.png",
+  "caution": "This is spatial association between different variables and does not establish causation."
+}

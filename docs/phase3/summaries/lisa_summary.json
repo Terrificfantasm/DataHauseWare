@@ -1,0 +1,84 @@
+{
+  "dataset_id": 2,
+  "unit": "AGEB urbana, CDMX",
+  "neighborhood_rule": "Queen contiguity",
+  "variables": [
+    {
+      "variable": "crime_records_per_1000",
+      "alpha": 0.05,
+      "permutations": 999,
+      "seed": 42,
+      "cluster_counts": {
+        "Not significant": 2272,
+        "Low-High": 110,
+        "High-High": 20,
+        "Low-Low": 11,
+        "Island": 1
+      },
+      "significant_count": 141,
+      "data_audit": {
+        "requested_columns": [
+          "crime_records_per_1000"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2414,
+        "excluded_rows": 17
+      },
+      "weights_audit": {
+        "rule": "Queen contiguity (shared edge or vertex)",
+        "implementation": "GeoPandas spatial index with polygon intersects predicate",
+        "n": 2414,
+        "islands": [
+          "4081"
+        ],
+        "island_count": 1,
+        "components": 6,
+        "min_neighbors": 0,
+        "max_neighbors": 21,
+        "mean_neighbors": 5.871582435791218
+      },
+      "table": "phase3/lisa/lisa_clusters_crime_records_per_1000.csv",
+      "figure": "phase3/lisa/lisa_map_crime_records_per_1000.png",
+      "caution": "LISA identifies local spatial association/outliers; it does not establish causation."
+    },
+    {
+      "variable": "business_density",
+      "alpha": 0.05,
+      "permutations": 999,
+      "seed": 42,
+      "cluster_counts": {
+        "Not significant": 2260,
+        "High-High": 121,
+        "Low-Low": 25,
+        "Low-High": 23,
+        "High-Low": 1,
+        "Island": 1
+      },
+      "significant_count": 170,
+      "data_audit": {
+        "requested_columns": [
+          "business_density"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2431,
+        "excluded_rows": 0
+      },
+      "weights_audit": {
+        "rule": "Queen contiguity (shared edge or vertex)",
+        "implementation": "GeoPandas spatial index with polygon intersects predicate",
+        "n": 2431,
+        "islands": [
+          "4081"
+        ],
+        "island_count": 1,
+        "components": 6,
+        "min_neighbors": 0,
+        "max_neighbors": 26,
+        "mean_neighbors": 5.933360756890169
+      },
+      "table": "phase3/lisa/lisa_clusters_business_density.csv",
+      "figure": "phase3/lisa/lisa_map_business_density.png",
+      "caution": "LISA identifies local spatial association/outliers; it does not establish causation."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "dataset_id": 2,
+  "name": "CDMX urbano 2020",
+  "fingerprint": "cf1717a7ad473908601293c7f72ac73de3d2e854f384c4e7e2e434fe8620cd4c",
+  "rule_version": "candidate-v1",
+  "exported_utc": "2026-10-03T06:54:36.158985+00:00",
+  "origin": "PostgreSQL dw and analytics; no raw or phase1 outputs read",
+  "files": {
+    "kpi_ageb.csv": "2ce6aabc56863f4b0fbe11cdc10815fedd831df9328da7ec245f25865c875f14",
+    "age_distribution.csv": "5f424819f22c8b61b8907946620546fc87bdeaa736a6a111b58caedd3cc8f880",
+    "crime_by_type_month.csv": "e220ead757c8c73651a86bef324602b7c4a190bca50fed8593ad8f8c02d1749d",
+    "areas.geojson": "7da678b001c8553b98c8b20e5d005058c4b9229052cb6b42e79f0bad47f5e147"
+  }
+}

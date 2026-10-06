@@ -1,0 +1,77 @@
+{
+  "dataset_id": 2,
+  "unit": "AGEB urbana, CDMX",
+  "neighborhood_rule": "Queen contiguity",
+  "variables": [
+    {
+      "variable": "crime_records_per_1000",
+      "moran_i": 0.025032834946459994,
+      "expected_i": -0.0004144218814753419,
+      "p_sim": 0.022,
+      "z_sim": 2.401468328805479,
+      "sim_mean": -0.0007416600929606688,
+      "sim_std": 0.010732806562658783,
+      "permutations": 999,
+      "seed": 42,
+      "significant_at_0_05": true,
+      "data_audit": {
+        "requested_columns": [
+          "crime_records_per_1000"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2414,
+        "excluded_rows": 17
+      },
+      "weights_audit": {
+        "rule": "Queen contiguity (shared edge or vertex)",
+        "implementation": "GeoPandas spatial index with polygon intersects predicate",
+        "n": 2414,
+        "islands": [
+          "4081"
+        ],
+        "island_count": 1,
+        "components": 6,
+        "min_neighbors": 0,
+        "max_neighbors": 21,
+        "mean_neighbors": 5.871582435791218
+      },
+      "figure": "phase3/global_moran/moran_scatter_crime_records_per_1000.png",
+      "caution": "Spatial association does not imply causation. Results depend on the Queen-neighborhood rule, missing-value exclusions, and the operational definition of the underlying indicators."
+    },
+    {
+      "variable": "business_density",
+      "moran_i": 0.4397721715235542,
+      "expected_i": -0.00041152263374485596,
+      "p_sim": 0.001,
+      "z_sim": 35.44216139929751,
+      "sim_mean": -0.00037902333346077536,
+      "sim_std": 0.012418858711752809,
+      "permutations": 999,
+      "seed": 42,
+      "significant_at_0_05": true,
+      "data_audit": {
+        "requested_columns": [
+          "business_density"
+        ],
+        "input_rows": 2431,
+        "included_rows": 2431,
+        "excluded_rows": 0
+      },
+      "weights_audit": {
+        "rule": "Queen contiguity (shared edge or vertex)",
+        "implementation": "GeoPandas spatial index with polygon intersects predicate",
+        "n": 2431,
+        "islands": [
+          "4081"
+        ],
+        "island_count": 1,
+        "components": 6,
+        "min_neighbors": 0,
+        "max_neighbors": 26,
+        "mean_neighbors": 5.933360756890169
+      },
+      "figure": "phase3/global_moran/moran_scatter_business_density.png",
+      "caution": "Spatial association does not imply causation. Results depend on the Queen-neighborhood rule, missing-value exclusions, and the operational definition of the underlying indicators."
+    }
+  ]
+}
